@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/medel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Code Challenge"
@@ -15,5 +16,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="269dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
