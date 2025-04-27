@@ -1,5 +1,7 @@
 package fi.arcada.codechallenge;
 
+import static fi.arcada.codechallenge.statistics.movingAvg;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -70,7 +72,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Vi visar vår fina counter i vår textView
         appCountTextView.setText(String.valueOf(appCounter));
+        double [] temperature = {17.5,18.7,19.5,22.5,24,15.8,12.9,13.6,10};
 
+        movingAvg(temperature,4);
 
 
         // Vår clickListener för settings
